@@ -32,7 +32,7 @@ class RadioClass (
 
     }
     fun cambiarestacion(nume: Double){
-        if(100.00>nume>87.00){
+        if(100.00>nume && nume>87.00){
             estacion=nume
         }
 
