@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 import java.util.List;
 public class Grado {
     //Atributos
     private String nombre;
-    private List estudiantes;
+    private List estudiantes= new ArrayList();
     //Metodos
     public List listaeEstudiantes(){
         return this.estudiantes;

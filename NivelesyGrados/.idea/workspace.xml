@@ -32,12 +32,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grado.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Grado.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Grado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="85">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#166#167#0" expanded="true" />
                 <element signature="e#206#207#0" expanded="true" />
                 <element signature="e#236#237#0" expanded="true" />
@@ -51,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="252">
+              <caret line="55" column="80" lean-forward="true" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,10 +91,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Grado.java" />
         <option value="$PROJECT_DIR$/src/Nivel.java" />
         <option value="$PROJECT_DIR$/src/Estudiante.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Grado.java" />
       </list>
     </option>
   </component>
@@ -221,7 +222,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info active="true" anchor="right" id="Run" order="8" visible="true" weight="0.32942432" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32960895" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
@@ -284,6 +285,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="55" column="80" lean-forward="true" selection-start-line="55" selection-start-column="80" selection-end-line="55" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Nivel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -304,9 +315,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Grado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="85">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#166#167#0" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
@@ -315,16 +327,6 @@
             <element signature="e#327#328#0" expanded="true" />
             <element signature="e#415#416#0" expanded="true" />
             <element signature="e#453#454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
