@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Nivel {
     //Atributos
     private String nombre;
-    private List<Grado> gradoList;
+    private List<Grado> gradoList = new ArrayList();
 
     //Metodos
     public Nivel(String nombreNivel){

@@ -9,8 +9,9 @@ public class Estudiante  {
     public int getCodigo(){
         return this.codigo;
     }
-    public Estudiante(String estudiante){
+    public Estudiante(String estudiante, int codigo){
         this.nombre=estudiante;
+        this.codigo=codigo;
     }
 
 }
