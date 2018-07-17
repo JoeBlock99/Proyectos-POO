@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        System.out.println("Que cool");
-
         boolean Continuar=true;
         List<Nivel> listaNiveles=new ArrayList<>();
         do {
             System.out.println(menu());
-            System.out.println("Numero dame");
+            System.out.println("Ingrese el numero de lo que desea hacer del menu.\n");
             Scanner input=new Scanner(System.in);
             int opcion=input.nextInt();
 
@@ -27,7 +25,7 @@ public class Main {
                     nivel=input.nextLine();
                     for(Nivel f:listaNiveles){
                         if(f.getNombre().equals(nivel)){
-                            System.out.println("Nombre de Nivel\n");
+                            System.out.println("Nombre de grado\n");
                             input=new Scanner(System.in);
                             String grado=input.nextLine();
                             f.agregarGrado(new Grado(grado));
@@ -42,7 +40,7 @@ public class Main {
                     nivel=input.nextLine();
                     for(Nivel f:listaNiveles){
                         if(f.getNombre().equals(nivel)){
-                            System.out.println("Nombre de Nivel\n");
+                            System.out.println("Nombre de Grado\n");
                             input=new Scanner(System.in);
                             String grado=input.nextLine();
 
@@ -65,10 +63,50 @@ public class Main {
                         }
                     }
                     break;
+                case 4:
+                    System.out.println("Nombre de Nivel\n");
+                    input=new Scanner(System.in);
+                    nivel=input.nextLine();
+                    for(Nivel f:listaNiveles) {
+                        if (f.getNombre().equals(nivel)) {
+                            System.out.println(f.getGrados());
+                        }else{
+                            System.out.println("No encontre ese nivel.\n");
+                        }
+                    }
+                    break;
+                case 5:
+                    System.out.println("Ingrese el nivel.\n");
+                    input=new Scanner(System.in);
+                    nivel=input.nextLine();
+                    for(Nivel f:listaNiveles){
+                        if (f.getNombre().equals(nivel)) {
+                            System.out.println("Ingrese el grado.\n");
+                            input=new Scanner(System.in);
+                            String grado=input.nextLine();
 
+                            List<Grado> listaDeGrados = f.getGrados();
 
+                            for(Grado g : listaDeGrados){
+                                if(g.getNombre().equals(grado)){
+                                    System.out.println(g.listaeEstudiantes());
 
+                                }else{
+                                    System.out.println("Dato incorrecto.");
+                                }
+                            }
+
+                        }else{
+                            System.out.println("No encontre ese nivel.\n");
+                        }
+
+                    }
+                    break;
+
+                case 6:
+                    Continuar=false;
             }
+
 
         }while(Continuar);
 
