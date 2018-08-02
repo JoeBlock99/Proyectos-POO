@@ -51,12 +51,45 @@ public class Map {
         }
     }
 
-    public boolean hayFichas(){
-        /*if (this.map[this.robot.getX()][this.robot.getY()]>0){
-
-        }*/
-        return true;
+    public Robot getRobot(){
+        return this.robot;
     }
+
+    public void recargar(){
+        for (int l =0; l<this.map.size();l++){
+            for (int e =0; e<this.map.get(l).size(); e++){
+                if(e == this.robot.getX() && l == this.robot.getY() && !this.map.get(l).get(e).equals("*")){
+                    this.map.get(l).set(e,this.robot.getFace());
+                } else if (e == this.robot.getX() && l == this.robot.getY() && hayPoints()){
+                    this.map.get(l).set(e,this.map.get(l).get(e));
+                } else {
+                    System.out.print("");
+                }
+            }
+        }
+    }
+
+    public boolean hayPoints(){
+        boolean siHay = false;
+        for (Points point : points) {
+            if (point.getX() == this.robot.getX() && point.getY() == this.robot.getY()) {
+                siHay = true;
+            }
+        }
+        if (siHay) {
+            return true;
+        }
+        return false;
+    }
+
+    public void quitarPoint(){
+        for (Points point : points) {
+            if (point.getX() == this.robot.getX() && point.getY() == this.robot.getY()) {
+                point.setValue(point.getValue() - 1);
+            }
+        }
+    }
+
     @Override
     public String toString(){
         String soyElMapa = "";

@@ -1,4 +1,4 @@
-import java.io.*;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -35,18 +35,36 @@ public class Main {
             System.out.println("Ingrese el nombre del archivo de solucion: ");
             Scanner inpu = new Scanner(System.in);
             String nombreTEXT = inpu.nextLine();
-           try{
-               Stream<String> lineas = Files.lines(
-                       Paths.get("/Users/block/Desktop/Jose Block/Radio/Rurple/mapas/"+nombreTEXT+".txt"),
-                       StandardCharsets.UTF_8
-               );
-           }catch(IOException exception){
-               System.out.println("Error!");
-           }
+            try{
+                Stream<String> lineas = Files.lines(
+                        Paths.get("/Users/block/Desktop/Jose BLock/Radio/Rurple/instrucciones/"+nombreTEXT+".txt"),
+                        StandardCharsets.UTF_8
+                );
+                lineas.forEach(line -> {
+                    System.out.println(line);
+                    switch (line){
+                        case "MOVE":
+                            myMap.getRobot().move();
+                            break;
+                        case "ROTATE":
+                            myMap.getRobot().turnleft();
+                            break;
+                        case "PICK":
+                            if (myMap.hayPoints()){
+                                myMap.getRobot().pick();
+                                myMap.quitarPoint();
+                            }
+                            break;
+                    }
+                    myMap.recargar();
+                    System.out.println(myMap);
+                    System.out.println("Points: "+myMap.getRobot().getPoints());
+                });
+            }catch(IOException exception){
+                System.out.println("Error!");
+            }
         } catch(IOException exception) {
             System.out.println("Error!");
         }
-
-
     }
 }
