@@ -9,4 +9,8 @@ public class Points {
         this.y=y;
         this.value=value;
     }
+    @Override
+    public String toString(){
+        return this.x+","+ this.y+":"+ this.value;
+    }
 }
