@@ -4,7 +4,9 @@ public class Points {
     private int y;
     private int value;
     //Metodos
-    public void Points(){
-
+    public Points(int x,int y,int value){
+        this.x=x;
+        this.y=y;
+        this.value=value;
     }
 }

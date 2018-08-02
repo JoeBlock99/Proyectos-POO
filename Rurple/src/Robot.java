@@ -5,6 +5,21 @@ public class Robot {
     private int points;
     private String face;
     //Metodos
+    public Robot(int x,int y, String d){
+        this.face= d;
+        this.x=x;
+        this.y=y;
+        this.points= 0;
+    }
+
+    public int getX(){
+        return this.x;
+    }
+
+    public int getY(){
+        return this.y;
+    }
+
     public void move(int x, int y){
         if (this.face == "^"){
             y =+ 1;
@@ -17,19 +32,7 @@ public class Robot {
         }
 
     }
-
-    public int getX(){
-        return this.x;
-    }
-
-    public int getY(){
-        return this.y;
-    }
-
     public void pick(){
-
-    }
-    public void Robot(){
 
     }
     public void turnleft(){
