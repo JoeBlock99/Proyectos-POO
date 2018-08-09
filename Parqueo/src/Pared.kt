@@ -1,7 +1,8 @@
 class Pared (
-        paredes: MutableList<Pared>,
-        x: Int,
-        y: Int
+        val x: Int,
+        val y: Int
 ){
-
+    override fun toString(): String {
+        return "(${x} , $y)"
+    }
 }

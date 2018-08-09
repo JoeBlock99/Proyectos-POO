@@ -1,3 +1,5 @@
+import java.io.File
+
 class Parqueo(
         val niveles: MutableList<Nivel> = mutableListOf()
 ){
@@ -19,5 +21,29 @@ class Parqueo(
     }
     fun findCarro(){
 
+    }
+
+    fun readfile(ubicacionFile: String){
+        var file= File("/Users/block/Desktop/Jose Block/Radio/Parqueo/Niveles/"+ubicacionFile)
+        var listaParedes: MutableList<Pared> = mutableListOf()
+        var listaVacios: MutableList<Vacios> = mutableListOf()
+        var listaEstacionamientos: MutableList<Estacionamiento> = mutableListOf()
+        var line=0
+        file.forEachLine {
+            var e=0
+            for (i in it) {
+                if (i.toString() == "*") {
+                    listaParedes.add(Pared(e,line))
+                }else if (i.toString() == " "){
+                    listaVacios.add(Vacios(e,line))
+                }else{
+                    listaEstacionamientos.add(Estacionamiento(e,line))
+                }
+                e+=1
+            }
+            line+=1
+        }
+
+        println(listaParedes)
     }
 }
