@@ -1,0 +1,3 @@
+interface Descripcion {
+    fun pedirmedidas()
+}
